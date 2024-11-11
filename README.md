@@ -25,11 +25,11 @@ Comision 3, 2do Cuatrimestre 2024 - Prof. Mauro Salina.
 
 
 
-- $${\color{lightgreen}MinHeap}$$ para ShortestJobFirst.
-- $${\color{lightgreen}MaxHeap}$$ para PreemptivePriority.
-- FactoryMethod empleado para crear las Heaps correspondientes.
-- StrategyMethod implementado para comparar procesos por prioridad o tiempo y para seleccionar la Heap a crear en FactoryMethod.
-- Interfase IComparable implementada en la clase Proceso para mantener el encapsulamiento.
+- $${\color{lightblue}MinHeap}$$ para ShortestJobFirst.
+- $${\color{lightblue}MaxHeap}$$ para PreemptivePriority.
+- $${\color{lightblue}FactoryMethod}$$ empleado para crear las Heaps correspondientes.
+- $${\color{lightblue}StrategyMethod}$$ implementado para comparar procesos por prioridad o tiempo y para seleccionar la Heap a crear en FactoryMethod.
+- Interfase $${\color{lightblue}IComparable}$$ implementada en la clase Proceso para mantener el encapsulamiento.
 
 ## Documentación / Informe
 
