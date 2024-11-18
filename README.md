@@ -33,4 +33,4 @@ Comision 3, 2do Cuatrimestre 2024 - Prof. Mauro Salina.
 
 ## Documentación / Informe
 
-- [Informe disponible aqui - Google Drive (PDF)]([https://github.com/wasyted/CTEDA-TP/informe.pdf](https://github.com/wasyted/CTEDA-TP/blob/main/informe.pdf))
+- [Informe disponible aqui - Google Drive (PDF)](https://github.com/wasyted/CTEDA-TP/blob/main/informe.pdf)
