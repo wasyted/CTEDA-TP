@@ -21,20 +21,20 @@ namespace tpfinal
 			int cantidadHojasMaxHeap = 0;
 			
 			IHeapStrategy PP = HeapFactory.CrearHeap("PP");
-			IHeapStrategy SSF = HeapFactory.CrearHeap("SJF");
+			IHeapStrategy SJF = HeapFactory.CrearHeap("SJF");
 			
 			foreach (var dato in datos) {
 				PP.Insertar(dato);
-				SSF.Insertar(dato);
+				SJF.Insertar(dato);
 			}
 			
-			cantidadHojasMinHeap = SSF.CantidadHojas();
+			cantidadHojasMinHeap = SJF.CantidadHojas();
 			cantidadHojasMaxHeap = PP.CantidadHojas();
 			
 			// Analizar hojas en MinHeap
 			result += "\nNodos hoja en MinHeap (SJF) (" + cantidadHojasMinHeap + "): ";
 			
-			result += SSF.ImprimirHojas();
+			result += SJF.ImprimirHojas();
 			
 			result += "\n";
 			
@@ -55,14 +55,14 @@ namespace tpfinal
 			int alturaMinHeap, alturaMaxHeap = 0;
 			
 			IHeapStrategy PP = HeapFactory.CrearHeap("PP");
-			IHeapStrategy SSF = HeapFactory.CrearHeap("SJF");
+			IHeapStrategy SJF = HeapFactory.CrearHeap("SJF");
 			
 			foreach (var dato in datos) {
 				PP.Insertar(dato);
-				SSF.Insertar(dato);
+				SJF.Insertar(dato);
 			}
 			
-			alturaMinHeap = SSF.AlturaHeap();
+			alturaMinHeap = SJF.AlturaHeap();
 			
 			alturaMaxHeap = PP.AlturaHeap();
 			
@@ -79,21 +79,21 @@ namespace tpfinal
 			int tamañoMaxHeap, tamañoMinHeap = 0;
 			
 			IHeapStrategy PP = HeapFactory.CrearHeap("PP");
-			IHeapStrategy SSF = HeapFactory.CrearHeap("SJF");
+			IHeapStrategy SJF = HeapFactory.CrearHeap("SJF");
 			
 			foreach (var dato in datos) {
 				PP.Insertar(dato);
-				SSF.Insertar(dato);
+				SJF.Insertar(dato);
 			}
 			
 			tamañoMaxHeap = PP.GetTamaño();
-			tamañoMinHeap = SSF.GetTamaño();
+			tamañoMinHeap = SJF.GetTamaño();
 			
 			result += "\nDatos en MinHeap (SJF): ";
 			for (int i = 0; i < tamañoMinHeap; i++)
 			{
 				int nivel = (int)Math.Floor(Math.Log(i + 1,2)); // Calcular nivel
-				result += "\nNivel " + nivel.ToString() + ": " + SSF.GetRaiz().ToString();
+				result += "\nNivel " + nivel.ToString() + ": " + SJF.GetRaiz().ToString();
 			}
 			
 			result += "\n";
